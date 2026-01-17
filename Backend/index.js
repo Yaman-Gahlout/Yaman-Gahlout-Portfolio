@@ -6,9 +6,9 @@ const route = require("./routes/mail.route");
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://yaman-gahlout-portfolio.vercel.app",
     credentials: true,
-  })
+  }),
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
