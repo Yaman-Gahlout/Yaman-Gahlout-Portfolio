@@ -28,11 +28,11 @@ export default function Contact() {
       };
       console.log(messageInfo);
       const response = await axios.post(
-        "http://localhost:8000/api/send-email",
+        "https://portfolio-backend-abh1.onrender.com/api/send-email",
         messageInfo,
         {
           withCredentials: true,
-        }
+        },
       );
       console.log(response.data);
       toast.success("Message sent successfully");
@@ -50,9 +50,9 @@ export default function Contact() {
       <div className="flex flex-col items-center">
         <h1 className="flex flex-col gap-[5px] text-5xl text-white font-bold">
           Get In Touch
-          <div className="w-[60px] h-[5px] rounded-2xl bg-[#914bf1]"></div>
+          <div className="w-15 h-1.25 rounded-2xl bg-[#914bf1]"></div>
         </h1>
-        <div className="mt-[10px] text-center text-xl text-[#94a3b8]">
+        <div className="mt-2.5 text-center text-xl text-[#94a3b8]">
           Have a question or want to work together? Feel free to drop me a
           message. I'd love to hear from you!
         </div>
